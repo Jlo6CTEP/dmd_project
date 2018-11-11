@@ -101,8 +101,7 @@ def main(*args):
     kek = {f: k for f, k in enumerate(table_contents[1])}
 
     data_template = {table: [commands[table][0]] + sorted(commands[table][1:], key=lambda x: {cont: enum for enum, cont
-                                                                                              in enumerate(
-        table_info[table])}[x[0]]) for table in commands.keys()}
+                                            in enumerate(table_info[table])}[x[0]]) for table in commands.keys()}
 
     data = deepcopy(data_template)
 
@@ -111,12 +110,9 @@ def main(*args):
         for i in range(int(data_template[key][0][0])):
             to_db = [tuple(tmp[0] for tmp in data_template[key][1:]),
                      tuple(handle_token(tmp[1]) for tmp in data_template[key][1:])]
-
-            db.execute('INSERT INTO {} ({}) VALUES ({})'.
-                       format(key, ','.join(list(map(str, to_db[0]))), questions), *to_db[1])
+            db.execute('INSERT INTO {} {} VALUES {}'.format(key, str(to_db[0]), str(to_db[1])))
     connection.commit()
     connection.close()
-    print("imma alive")
 
 
 if __name__ == '__main__':
