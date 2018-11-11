@@ -4,6 +4,8 @@ import subprocess as sb
 import sqlite3
 import os
 import random
+from copy import deepcopy
+from sqlite3 import IntegrityError
 
 return_types = {'integer': lambda x: int(''.join(list(map(str, x)))),
                 'string': lambda x: ''.join(list(map(str, x))),
@@ -85,37 +87,53 @@ def main(*args):
             if x.startswith('table') and len(one_table) != 0:
                 commands.update({one_table[0].split(' ')[1]: one_table})
                 one_table = []
-            one_table.append(x)
+            if x != '':
+                one_table.append(x)
     if len(one_table) != 0:
         commands.update({one_table[0].split(' ')[1]: one_table})
+
+    for x in commands.keys():
+        if ';' in x:
+            raise ValueError
 
     for k, v in commands.items():
         commands.update({k: [[v[0].split(' ')[2]]] + [x.split() for x in v[1:]]})
     kek = {f: k for f, k in enumerate(table_contents[1])}
 
-    data = {table: [commands[table][0]] + sorted(commands[table][1:], key=lambda x: {cont: enum for enum, cont
-                            in enumerate(table_info[table])}[x[0]]) for table in commands.keys()}
+    data_template = {table: [commands[table][0]] + sorted(commands[table][1:], key=lambda x: {cont: enum for enum, cont
+                                                                                              in enumerate(
+        table_info[table])}[x[0]]) for table in commands.keys()}
 
-    for k,v in data.items():
-        for x in range(1, len(data[k])):
-            data[k][x][1] = handle_token(data[k][x][1])
+    data = deepcopy(data_template)
 
+    for key in data_template.keys():
+        questions = ','.join(['?'] * len(data_template[key]))
+        for i in range(int(data_template[key][0][0])):
+            to_db = [tuple(tmp[0] for tmp in data_template[key][1:]),
+                     tuple(handle_token(tmp[1]) for tmp in data_template[key][1:])]
 
-    for table_record in commands:
-        for count in table_record[2]:
-            db.execute('INSERT INTO ? (?) VALUES (?)', [table_record[0]])
+            db.execute('INSERT INTO {} ({}) VALUES ({})'.
+                       format(key, ','.join(list(map(str, to_db[0]))), questions), *to_db[1])
+    connection.commit()
+    connection.close()
+    print("imma alive")
 
 
 if __name__ == '__main__':
     main(sys.argv)
+    # try:
+    #    main(sys.argv)
+    # except ValueError():
+    #    print('Incorrect input')
 
-# table bank_card 1000
+# table bank_card 20
 # Security_code int(10,10000)
 # Expire date()
 # Number int(10,100000)
-# table car_order 1000
+# table car_order 20
 # Order_ID int(0,1000)
 # Cost int(0,1000)
 # Destination location()
+# Pickup location()
 # ;
 # for table in commands if table[0][0]

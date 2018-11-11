@@ -1,1 +1,1 @@
-string int(0,24):int(0,59)
+string int(1,24):int(1,59)
