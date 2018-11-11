@@ -1,12 +1,11 @@
-import random
 import sys
 import re
 import subprocess as sb
-import glob
+import sqlite3
 import os
 import random
 
-return_types = {'integer': lambda x: ''.join(list(map(int, x))),
+return_types = {'integer': lambda x: int(''.join(list(map(str, x)))),
                 'string': lambda x: ''.join(list(map(str, x))),
                 'chr': lambda x: ''.join(list(map(chr, x)))}
 
@@ -53,35 +52,70 @@ def handle_token(term):
                 else:
                     literal += to_parse[0]
                     to_parse = to_parse[1:]
+            if len(literal) > 0:
+                parsed.append(literal)
             return return_type([handle_token(x) for x in parsed if x])
     else:
         return term
 
 
 def main(*args):
-    print('Prompt templates to fill db')
-
-    f = nonterm_files
-    k = term_files
-
-    print(''.join(handle_token('license_plate()')))
-
-    # print(args)
+    print('First provide table name and number of elements to be filled as "table your_table_name your_int"')
+    print('Finally provide templates to fill DB in form "your_column_name entry" ')
+    print('where Entry is name of terminal or nonterminal from corresponding folders')
+    print('When done with one table, prompt "table your_table_name" again, to start work with another')
+    print('When done, prompt ";" symbol')
     # db_name = args[0][1].replace("\\\\", '\\')
 
     db_name = '.\\courseDB\\courseDB'
-    table_list = re.sub('( |\\r\\n)+', ' ', (sb.check_output("sqlite3 {} .tables".format(db_name)).decode()))
+    connection = sqlite3.connect(db_name)
+    db = connection.cursor()
 
-    x = input('>>>')
-    commands = []
+    table_list = [name[0] for name in db.execute("SELECT name FROM sqlite_master WHERE type='table';")]
+    table_contents = [list(x[1] for x in db.execute("PRAGMA table_info({})".format(x)).fetchall()) for x in table_list]
+
+    table_info = {name: field for name, field in zip(table_list, table_contents)}
+
+    x = ""
+    commands = {}
+    one_table = []
     while not x.endswith(';'):
-        commands.append(x)
         x = input('>>>')
+        if x != ';':
+            if x.startswith('table') and len(one_table) != 0:
+                commands.update({one_table[0].split(' ')[1]: one_table})
+                one_table = []
+            one_table.append(x)
+    if len(one_table) != 0:
+        commands.update({one_table[0].split(' ')[1]: one_table})
 
-    print(commands)
+    for k, v in commands.items():
+        commands.update({k: [[v[0].split(' ')[2]]] + [x.split() for x in v[1:]]})
+    kek = {f: k for f, k in enumerate(table_contents[1])}
 
-    print(table_list)
+    data = {table: [commands[table][0]] + sorted(commands[table][1:], key=lambda x: {cont: enum for enum, cont
+                            in enumerate(table_info[table])}[x[0]]) for table in commands.keys()}
+
+    for k,v in data.items():
+        for x in range(1, len(data[k])):
+            data[k][x][1] = handle_token(data[k][x][1])
+
+
+    for table_record in commands:
+        for count in table_record[2]:
+            db.execute('INSERT INTO ? (?) VALUES (?)', [table_record[0]])
 
 
 if __name__ == '__main__':
     main(sys.argv)
+
+# table bank_card 1000
+# Security_code int(10,10000)
+# Expire date()
+# Number int(10,100000)
+# table car_order 1000
+# Order_ID int(0,1000)
+# Cost int(0,1000)
+# Destination location()
+# ;
+# for table in commands if table[0][0]
