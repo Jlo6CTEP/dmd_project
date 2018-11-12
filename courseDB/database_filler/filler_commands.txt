@@ -35,7 +35,7 @@ table customer 5000
 customer_id unique_int(1,10000)
 username nick_name
 first_name first_name
-second_name _last_name
+second_name last_name
 residence_address address()
 phone phone()
 email email
@@ -43,7 +43,7 @@ gps_location location()
 table bank_card 750
 card_id unique_int(1,100000)
 number card_no()
-expire date()
+expire date_no_day()
 security_code int(100,999)
 table car 300
 car_id unique_int(1,10000)

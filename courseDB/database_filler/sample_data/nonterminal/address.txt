@@ -1,1 +1,1 @@
-string country, street street_suffix, int(10000,99999)
+string country, city, street street_suffix, int(10000,99999)
