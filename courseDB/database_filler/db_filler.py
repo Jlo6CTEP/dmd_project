@@ -7,8 +7,6 @@ import random
 from copy import deepcopy
 from sqlite3 import IntegrityError
 
-unique_randint = []
-
 return_types = {'integer': lambda x: int(''.join(list(map(str, x)))),
                 'string': lambda x: ''.join(list(map(str, x))),
                 'chr': lambda x: ''.join(list(map(chr, x)))}
@@ -25,20 +23,24 @@ term_path = [os.path.join('.\\sample_data\\terminal', file) for file in term_txt
 term_files = {name: file for name, file in zip(term_notxt, [open(x, 'r').read().split(',') for x in term_path])}
 
 
-def handle_token(term):
+def handle_token(term, create_list, x, unique_randint):
     if term in term_notxt:
         return term_files[term][random.randint(0, len(term_files[term]) - 1)]
     elif re.sub('\(.*\)', '', term) in nonterm_notxt:
         term_no_args = re.sub('\(.*\)', '', term)
         args = re.sub(term_no_args + '\(|\)', '', term).replace(' ', '').split(',')
         return_type = return_types[nonterm_files[term_no_args].split(' ')[0].strip(' ')]
+
         if re.fullmatch('int\(\d*,\d*\)', term):
             return random.randint(*map(int, args))
         if re.fullmatch('unique_int\(\d*,\d*\)', term):
-            range = 
-            if len(unique_randint) == 0:
-                unique_randint = random.sample(tuple(map(int, args)), )
-            return random.randint(*map(int, args))
+            x[0] += 1
+            rand_range = list(map(int, args))
+            if create_list:
+                unique_randint.append(random.sample(range(*rand_range), rand_range[1] - rand_range[0]))
+                print([unique_randint[0].count(x) for x in unique_randint[0]])
+            print(unique_randint)
+            return unique_randint[x[0]].pop(0)
         else:
             parsed = []
             literal = ""
@@ -63,7 +65,7 @@ def handle_token(term):
                     to_parse = to_parse[1:]
             if len(literal) > 0:
                 parsed.append(literal)
-            return return_type([handle_token(x) for x in parsed if x])
+            return return_type([handle_token(x, create_list, x, unique_randint) for x in parsed if x])
     else:
         return term
 
@@ -105,7 +107,6 @@ def main(*args):
 
     for k, v in commands.items():
         commands.update({k: [[v[0].split(' ')[2]]] + [x.split() for x in v[1:]]})
-    kek = {f: k for f, k in enumerate(table_contents[1])}
 
     data_template = {table: [commands[table][0]] + sorted(commands[table][1:], key=lambda x: {cont: enum for enum, cont
                                             in enumerate(table_info[table])}[x[0]]) for table in commands.keys()}
@@ -114,10 +115,20 @@ def main(*args):
 
     for key in data_template.keys():
         questions = ','.join(['?'] * len(data_template[key]))
+        create_unique_list = True
+        x = [-1]
+        unique_rand = []
         for i in range(int(data_template[key][0][0])):
-            to_db = [tuple(tmp[0] for tmp in data_template[key][1:]),
-                     tuple(handle_token(tmp[1]) for tmp in data_template[key][1:])]
-            db.execute('INSERT INTO {} {} VALUES {}'.format(key, str(to_db[0]), str(to_db[1])))
+            print(i)
+            try:
+                to_db = [tuple(tmp[0] for tmp in data_template[key][1:]),
+                         tuple(handle_token(tmp[1], create_unique_list, x, unique_rand) for tmp in data_template[key][1:])]
+                print(to_db[1][0])
+                db.execute('INSERT INTO {} {} VALUES {}'.format(key, str(to_db[0]), str(to_db[1])))
+                create_unique_list = False
+            except IntegrityError:
+                pass
+            x = [-1]
     connection.commit()
     connection.close()
 
