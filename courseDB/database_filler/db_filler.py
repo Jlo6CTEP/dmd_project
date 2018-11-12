@@ -38,8 +38,6 @@ def handle_token(term, create_list, x, unique_randint):
             rand_range = list(map(int, args))
             if create_list:
                 unique_randint.append(random.sample(range(*rand_range), rand_range[1] - rand_range[0]))
-                print([unique_randint[0].count(x) for x in unique_randint[0]])
-            print(unique_randint)
             return unique_randint[x[0]].pop(0)
         else:
             parsed = []
@@ -114,16 +112,14 @@ def main(*args):
     data = deepcopy(data_template)
 
     for key in data_template.keys():
-        questions = ','.join(['?'] * len(data_template[key]))
+        print(key)
         create_unique_list = True
         x = [-1]
         unique_rand = []
         for i in range(int(data_template[key][0][0])):
-            print(i)
             try:
                 to_db = [tuple(tmp[0] for tmp in data_template[key][1:]),
                          tuple(handle_token(tmp[1], create_unique_list, x, unique_rand) for tmp in data_template[key][1:])]
-                print(to_db[1][0])
                 db.execute('INSERT INTO {} {} VALUES {}'.format(key, str(to_db[0]), str(to_db[1])))
                 create_unique_list = False
             except IntegrityError:

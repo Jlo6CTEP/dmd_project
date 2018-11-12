@@ -42,7 +42,8 @@ phone smallint not null,
 email varchar(30) not null,
 gps_location varchar(100) not null);
 CREATE TABLE bank_card(
-number integer primary key not null,
+card_id integer primary key not null,
+number varchar(30) not null,
 expire date not null,
 security_code smallint not null);
 CREATE TABLE car(
