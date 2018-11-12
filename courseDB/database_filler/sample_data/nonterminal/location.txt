@@ -1,0 +1,1 @@
+string latitude int(0,90)°int(0,60)', longitude int(0,90)°int(0,60)'
