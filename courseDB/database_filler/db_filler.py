@@ -7,6 +7,8 @@ import random
 from copy import deepcopy
 from sqlite3 import IntegrityError
 
+unique_randint = []
+
 return_types = {'integer': lambda x: int(''.join(list(map(str, x)))),
                 'string': lambda x: ''.join(list(map(str, x))),
                 'chr': lambda x: ''.join(list(map(chr, x)))}
@@ -31,6 +33,11 @@ def handle_token(term):
         args = re.sub(term_no_args + '\(|\)', '', term).replace(' ', '').split(',')
         return_type = return_types[nonterm_files[term_no_args].split(' ')[0].strip(' ')]
         if re.fullmatch('int\(\d*,\d*\)', term):
+            return random.randint(*map(int, args))
+        if re.fullmatch('unique_int\(\d*,\d*\)', term):
+            range = 
+            if len(unique_randint) == 0:
+                unique_randint = random.sample(tuple(map(int, args)), )
             return random.randint(*map(int, args))
         else:
             parsed = []
@@ -66,10 +73,10 @@ def main(*args):
     print('Finally provide templates to fill DB in form "your_column_name entry" ')
     print('where Entry is name of terminal or nonterminal from corresponding folders')
     print('When done with one table, prompt "table your_table_name" again, to start work with another')
-    print('When done, prompt ";" symbol')
+    print('Input one statement per line, when done, prompt ";" symbol')
     # db_name = args[0][1].replace("\\\\", '\\')
 
-    db_name = '.\\courseDB\\courseDB'
+    db_name = '..\\courseDB'
     connection = sqlite3.connect(db_name)
     db = connection.cursor()
 

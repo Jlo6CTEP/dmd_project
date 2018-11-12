@@ -1,0 +1,78 @@
+table car_order 1000
+order_id int(1,10000)
+cost int(100,1000)
+initial_location location()
+pickup_location location()
+destination_location location()
+initial_time time_seconds()
+pickup_time time_seconds()
+destination_time time_seconds()
+pickup_distance int(10,100)
+destination_distance int(10,100)
+;
+
+table charging_station 20
+station_id int(1,10000)
+price int(100,1000)
+charging_time time_seconds()
+gps_location location()
+available_sockets int(1,10)
+;
+
+table parts_provider 30
+provider_id int(1,10000)
+name full_name()
+address address()
+phone phone()
+;
+
+table car_part 2000
+part_id int(1,10000)
+manufacturer_id int(1,10000)
+type part_type
+color color
+price int(100,1000)
+;
+
+table workshop 40
+workshop_id int(1,10000)
+work_time work_hours()
+address address()
+gps_location location()
+;
+
+table customer 5000
+customer_id int(1,10000)
+username nick_name
+first_name first_name
+second_name _last_name
+residence_address address()
+phone phone()
+email email
+gps_location location()
+;
+
+table bank_card 750
+number int(100000000000,9999999999999999)
+expire date()
+security_code int(100,999)
+;
+
+table car 300
+car_id int(1,10000)
+model model
+license_plate license_plate()
+color color
+mileage int(100,10000)
+gps_location location()
+state state
+battery_level int(1,100)
+;
+
+table socket 10
+socket_id int(1,10000)
+voltage int(50,220)
+type shape
+is_available bool()
+;
+
