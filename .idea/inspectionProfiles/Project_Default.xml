@@ -12,6 +12,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="query.frontend.task_list" />
+          <option value="query.query.*" />
         </list>
       </option>
     </inspection_tool>
