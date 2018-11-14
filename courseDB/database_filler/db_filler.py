@@ -1,6 +1,5 @@
 import sys
 import re
-import subprocess as sb
 import sqlite3
 import os
 import random
