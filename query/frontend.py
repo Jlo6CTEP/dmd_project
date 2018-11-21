@@ -8,12 +8,15 @@ import query
 from PyQt5.QtWidgets import QWidget, QDesktopWidget, QApplication, QScrollArea, QLabel, QPushButton, QComboBox, \
     QVBoxLayout, QHBoxLayout, QFrame
 
+from sys import platform
+
 
 class MainWindow(QWidget):
     def __init__(self):
 
-        my_app_id = 'InnoUI.DMD_project.ez_A_for_course.101'  # arbitrary string
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(my_app_id)
+        if sys.platform != 'linux':
+            my_app_id = 'InnoUI.DMD_project.ez_A_for_course.101'  # arbitrary string
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(my_app_id)
 
         super().__init__()
         self.screen_size = QDesktopWidget().screenGeometry()
