@@ -1,3 +1,5 @@
+import itertools
+import math
 import sys
 import re
 import sqlite3
@@ -85,64 +87,68 @@ def main(*args):
     table_info = {name: field for name, field in zip(table_list, table_contents)}
 
     x = ""
-    commands = {}
-    one_table = []
+    raw_input = ""
     while not x.endswith(';'):
-        x = input('>>>')
-        if x != ';':
-            if x.startswith('table') and len(one_table) != 0:
-                commands.update({one_table[0].split(' ')[1]: one_table})
-                one_table = []
-            if x != '':
-                one_table.append(x)
-    if len(one_table) != 0:
-        commands.update({one_table[0].split(' ')[1]: one_table})
+        x = (input('>>>'))
+        raw_input += '\n' + x
 
-    for x in commands.keys():
-        if ';' in x:
-            raise ValueError
+    raw_input = ['table' + x for x in re.sub('\n\n+', '', raw_input.replace(';', '')).split('table')]
+    commands = [[x.strip().split(' ') for x in record.split('\n')] for record in raw_input]
+    # commands = [dict([('kek', 'kek') for line in record]) for record in raw_input]
+    print('*')
 
-    for k, v in commands.items():
-        commands.update({k: [[v[0].split(' ')[2]]] + [x.split() for x in v[1:]]})
-
-    data_template = {table: [commands[table][0]] + sorted(commands[table][1:], key=lambda x: {cont: enum for enum, cont
-                                            in enumerate(table_info[table])}[x[0]]) for table in commands.keys()}
-
-    data = deepcopy(data_template)
-
-    for key in data_template.keys():
-        print(key)
+    flag = False
+    unique_sequence = []
+    data_full = []
+    for record in commands[1:]:
+        flag = False
         create_unique_list = True
-        x = [-1]
-        unique_rand = []
-        for i in range(int(data_template[key][0][0])):
-            try:
-                to_db = [tuple(tmp[0] for tmp in data_template[key][1:]),
-                         tuple(handle_token(tmp[1], create_unique_list, x, unique_rand) for tmp in data_template[key][1:])]
-                db.execute('INSERT INTO {} {} VALUES {}'.format(key, str(to_db[0]), str(to_db[1])))
-                create_unique_list = False
-            except IntegrityError:
-                pass
-            x = [-1]
+        header = record[0]
+        create_list = []
+        alt = [-1]
+        for f in range(int(header[2])):
+            data_full = []
+            for x in record[1:]:
+                if x[0] == 'record':
+                    data_full += [[x[1]]]
+                    data_full += [[handle_token(x[2], create_unique_list, alt, create_list)]]
+                if x[0] == 'foreign':
+                    table1 = list(db.execute("SELECT {} FROM {}".format(x[2], x[3])))
+                    data_full += [[x[1]]]
+                    data_full += [[random.sample(table1, 1)]]
+            create_unique_list = False
+            alt = [-1]
+
+            for relation in [x for x in record[1:] if x[0] == 'relation']:
+                table1 = list(db.execute("SELECT {} FROM {}".format(relation[2], relation[1])))
+                table2 = list(db.execute("SELECT {} FROM {}".format(relation[4], relation[3])))
+
+                if relation[5] == 'N-N':
+                    data_full[0] += [relation[2]]
+                    data_full[1] += random.sample(table1, 1)
+                    data_full[0] += [relation[4]]
+                    data_full[1] += random.sample(table2, 1)
+                elif relation[5] == '1-N':
+                    if not flag:
+                        unique_sequence = random.sample(table1, len(table1))
+                    flag = True
+                    data_full[0] += [relation[2]]
+                    data_full[1] += unique_sequence.pop(0)
+                    data_full[0] += [relation[4]]
+                    data_full[1] += random.sample(table1, 1)
+                else:
+                    data_full[0] += [relation[2]]
+                    data_full[1] += table1.pop(random.randint(0, len(table1)-1))
+                    data_full[0] += [relation[4]]
+                    data_full[1] += table2.pop(random.randint(0, len(table2)-1))
+            db.execute('INSERT INTO {} ({}) VALUES ({})'.format(header[1], ','.join(data_full[0]),
+                                                                ','.join(map(str, data_full[1]))))
+        print()
     connection.commit()
     connection.close()
+
+    print()
 
 
 if __name__ == '__main__':
     main(sys.argv)
-    # try:
-    #    main(sys.argv)
-    # except ValueError():
-    #    print('Incorrect input')
-
-# table bank_card 20
-# Security_code int(10,10000)
-# Expire date()
-# Number int(10,100000)
-# table car_order 20
-# Order_ID int(0,1000)
-# Cost int(0,1000)
-# Destination location()
-# Pickup location()
-# ;
-# for table in commands if table[0][0]

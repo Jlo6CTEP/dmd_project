@@ -13,6 +13,7 @@
         <list>
           <option value="query.frontend.task_list" />
           <option value="query.query.*" />
+          <option value="task_list" />
         </list>
       </option>
     </inspection_tool>

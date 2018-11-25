@@ -1,4 +1,3 @@
-import textwrap as t
 
 task = {'Query 1 ': ("A customer claims she forgot her bag in a car and asks to help. She was using cars "
                      "several times this day, but she believes the right car was red and its plate starts "
