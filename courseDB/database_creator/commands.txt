@@ -69,8 +69,8 @@ initial_location integer not null,
 pickup_location integer not null,
 destination_distance smallint,
 PRIMARY KEY(initial_location,pickup_location),
-FOREIGN KEY (pickup_location,destination_distance) references car_order0(pickup_location,destination_distance),
-FOREIGN KEY (initial_location,pickup_location) references location(location_id,location_id));
+FOREIGN KEY (pickup_location,destination_location) references car_order0(pickup_location,destination_location),
+FOREIGN KEY (pickup_location,destination_location) references location(location_id,location_id));
 CREATE TABLE car_order5(
 pickup_time datetime,
 destination_time datetime,
