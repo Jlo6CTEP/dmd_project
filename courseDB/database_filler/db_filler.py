@@ -136,10 +136,10 @@ def main(*args):
             except sqlite3.IntegrityError:
                 pass
         print(header[1])
-        connection.commit()
+    connection.commit()
     connection.close()
 
-    print()
+    
 
 
 if __name__ == '__main__':

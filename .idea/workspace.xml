@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c4d49d5-87fb-45d5-a837-eff10ae93343" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseDB/database_creator/commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_creator/commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,21 +37,21 @@
           <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="21" />
+          <entry key="py" value="22" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="14" />
-          <entry key="Python" value="21" />
+          <entry key="Python" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -96,6 +95,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/query/frontend.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-69">
+              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
           <provider selected="true" editor-type-id="text-editor" />
@@ -106,15 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="629">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/query.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -158,7 +157,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="342" />
+    <option name="x" value="340" />
     <option name="y" value="600" />
     <option name="width" value="1805" />
     <option name="height" value="1715" />
@@ -218,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.frontend (1)">
+  <component name="RunManager" selected="Python.db_filler">
     <configuration name="db_filler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dmd_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -292,8 +291,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.frontend (1)" />
         <item itemvalue="Python.db_filler" />
+        <item itemvalue="Python.frontend (1)" />
         <item itemvalue="Python.frontend" />
       </list>
     </recent_temporary>
@@ -312,16 +311,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="-6" width="1213" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17402376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991511" weight="0.39875388" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991511" visible="true" weight="0.39719626" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4143302" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -330,10 +328,11 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008489" side_tool="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info active="true" anchor="right" id="Database" visible="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Database Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -426,9 +425,6 @@
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/chr.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
@@ -439,6 +435,8 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py" />
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/bank_card" />
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/query.py" />
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -449,6 +447,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/query/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -458,22 +459,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/query/frontend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="-69">
           <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/bank_card">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
         </state>
       </provider>
     </entry>

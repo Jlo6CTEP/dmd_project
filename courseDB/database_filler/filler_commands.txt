@@ -58,6 +58,17 @@ record pickup_distance int(10,1000)
 foreign initial_location initial_location car_order0
 foreign pickup_location pickup_location car_order0
 
+table car_order4 4000
+record destination_distance int(10,1000)
+foreign pickup_location pickup_location car_order0
+foreign destination_location destination_location car_order0
+
+table car_order5 4000
+record cost int(10,1000)
+foreign pickup_time pickup_time car_order1
+foreign destination_time destination_time car_order2
+foreign destination_distance destination_distance car_order4
+
 table charging_station 200
 record station_id unique_int(0,10000)
 record price int(10,100)
