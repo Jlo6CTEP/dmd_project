@@ -1,139 +1,1 @@
-CREATE TABLE customer(
-customer_id integer PRIMARY KEY NOT NULL,
-username varchar(20) NOT NULL,
-first_name varchar(15) not null,
-second_name varchar(15) not null,
-residence_address char(100),
-phone smallint not null,
-email varchar(30) not null,
-gps_location varchar(100) not null);
-CREATE TABLE bank_card(
-number bigint primary key not null,
-expire date not null,
-verif smallint not null,
-customer_id INTEGER not null,
-foreign key(customer_id) references customer(customer_id));
-CREATE TABLE car(
-car_id integer primary key not null,
-model varchar(20) not null,
-license_plate varchar(10) not null,
-color varchar(10) not null,
-mileage integer not null,
-gps_location varchar(100) not null,
-state varchar(15),
-battery_level integer);
-CREATE TABLE location(
-location_id integer primary key not null,
-address varchar(30) not null,
-gps_location varchar(30) not null
-);
-CREATE TABLE car_order0(
-order_id integer primary key,
-initial_location integer not null,
-pickup_location integer not null,
-destination_location integer not null,
-initial_time datetime,
-bank_card bigint not null,
-customer_id integer not null,
-car_id integer not null,
-foreign key(bank_card) references bank_card(number),
-foreign key(customer_id) references customer(customer_id),
-foreign key(car_id) references car(car_id),
-FOREIGN KEY (initial_location,pickup_location,destination_location) references location(location_id,location_id,location_id));
-CREATE TABLE car_order1(
-initial_location integer not null,
-pickup_location integer not null,
-initial_time datetime,
-pickup_time datetime,
-PRIMARY KEY (initial_location,pickup_location,initial_time),
-FOREIGN KEY (initial_location,pickup_location,initial_time) references car_order0(initial_location,pickup_location,initial_time),
-FOREIGN KEY (initial_location,pickup_location) references location(location_id,location_id));
-CREATE TABLE car_order2(
-pickup_location integer not null,
-destination_location integer  not null,
-pickup_time datetime,
-destination_time,
-PRIMARY KEY(pickup_location,destination_location,pickup_time),
-FOREIGN KEY (pickup_location,destination_location) references car_order0(pickup_location,destination_location),
-FOREIGN KEY (pickup_time) references car_order1(pickup_time),
-FOREIGN KEY (pickup_location,destination_location) references location(location_id,location_id));
-CREATE TABLE car_order3(
-initial_location integer not null,
-pickup_location integer not null,
-pickup_distance smallint,
-PRIMARY KEY(initial_location,pickup_location),
-FOREIGN KEY (initial_location,pickup_location) references car_order0(initial_location,pickup_location),
-FOREIGN KEY (initial_location,pickup_location) references location(location_id,location_id));
-CREATE TABLE car_order4(
-initial_location integer not null,
-pickup_location integer not null,
-destination_distance smallint,
-PRIMARY KEY(initial_location,pickup_location),
-FOREIGN KEY (pickup_location,destination_location) references car_order0(pickup_location,destination_location),
-FOREIGN KEY (pickup_location,destination_location) references location(location_id,location_id));
-CREATE TABLE car_order5(
-pickup_time datetime,
-destination_time datetime,
-destination_distance smallint,
-cost smallint not null,
-PRIMARY KEY(pickup_time,destination_time,destination_distance),
-FOREIGN KEY (pickup_time) references car_order2(pickup_time),
-FOREIGN KEY (destination_time) references car_order2(destination_time),
-FOREIGN KEY (destination_distance) references car_order4(destination_distance));
-CREATE TABLE charging_station(
-station_id integer primary key not null,
-price smallint not null,
-charging_time smallint not null,
-gps_location varchar(100) not null,
-available_sockets smallint not null);
-CREATE TABLE workshop(
-workshop_id integer primary key not null,
-work_time varchar(30),
-address varchar(150) not null,
-gps_location varchar(100) not null);
-CREATE TABLE socket(
-socket_id integer primary key not null,
-voltage smallint,
-type varchar(15),
-is_available tinyint,
-station_id integer not null,
-foreign key (station_id) references charging_station(station_id));
-CREATE TABLE car_parts_provider(
-provider_id integer primary key not null,
-name varchar(15) not null,
-address varchar(150) not null,
-phone smallint not null);
-CREATE TABLE car_part_class(
-vendor_code integer primary key not null,
-type varchar(30) not null,
-color varchar(30) not null,
-manufacturer varchar(30));
-CREATE TABLE car_part_instance(
-car_part_id integer primary key not null,
-usage_date datetime not null,
-workshop_id integer not null, 
-vendor_code integer not null,
-foreign key (workshop_id) references workshop(workshop_id),
-foreign key (vendor_code) references car_part_class(vendor_code));
-CREATE TABLE car_workshop(
-car_id integer not null,
-workshop_id integer not null,
-cost integer not null,
-PRIMARY KEY(car_id,workshop_id),
-FOREIGN KEY(car_id) references car(car_id),
-FOREIGN KEY(workshop_id) references workshop(workshop_id));
-CREATE TABLE car_charging_station(
-car_id integer not null,
-station_id integer not null,
-start_time datetime, 
-end_time datetime,
-PRIMARY KEY(car_id,station_id),
-FOREIGN KEY(car_id) references car(car_id),
-FOREIGN KEY(station_id) references charging_station(station_id));
-CREATE TABLE car_part_class_car_part_provider(
-vendor_code integer not null,
-provider_id integer not null,
-price integer not null,
-PRIMARY KEY(vendor_code,provider_id),
-FOREIGN KEY(vendor_code) references car_part_class(vendor_code),
-FOREIGN KEY(provider_id) references car_parts_provider(provider_id));
+CREATE TABLE customer(customer_id integer PRIMARY KEY NOT NULL,username varchar(20) NOT NULL,first_name varchar(15) not null,second_name varchar(15) not null,residence_address char(100),phone smallint not null,email varchar(30) not null,gps_location varchar(100) not null);CREATE TABLE bank_card(number bigint primary key not null,expire date not null,verif smallint not null,customer_id INTEGER not null,foreign key(customer_id) references customer(customer_id));CREATE TABLE car(car_id integer primary key not null,model varchar(20) not null,license_plate varchar(10) not null,color varchar(10) not null,mileage integer not null,gps_location varchar(100) not null,state varchar(15),battery_level integer);CREATE TABLE location(location_id integer primary key not null,address varchar(30) not null,gps_location varchar(30) not null);CREATE TABLE car_order0(order_id integer primary key,initial_location integer not null,pickup_location integer not null,destination_location integer not null,initial_time datetime,bank_card bigint not null,customer_id integer not null,car_id integer not null,foreign key(bank_card) references bank_card(number),foreign key(customer_id) references customer(customer_id),foreign key(car_id) references car(car_id),FOREIGN KEY (initial_location,pickup_location,destination_location) references location(location_id,location_id,location_id));CREATE TABLE car_order1(initial_location integer not null,pickup_location integer not null,initial_time datetime,pickup_time datetime,PRIMARY KEY (initial_location,pickup_location,initial_time),FOREIGN KEY (initial_location,pickup_location,initial_time) references car_order0(initial_location,pickup_location,initial_time));CREATE TABLE car_order2(pickup_location integer not null,destination_location integer  not null,pickup_time datetime,destination_time datetime,PRIMARY KEY(pickup_location,destination_location,pickup_time),FOREIGN KEY (pickup_location,destination_location) references car_order0(pickup_location,destination_location),FOREIGN KEY (pickup_time) references car_order1(pickup_time));CREATE TABLE car_order3(initial_location integer not null,pickup_location integer not null,pickup_distance smallint,PRIMARY KEY(initial_location,pickup_location),FOREIGN KEY (initial_location,pickup_location) references car_order0(initial_location,pickup_location));CREATE TABLE car_order4(pickup_location integer not null,destination_location integer not null,destination_distance smallint,PRIMARY KEY(pickup_location,destination_location),FOREIGN KEY (pickup_location,destination_location) references car_order0(pickup_location,destination_location));CREATE TABLE car_order5(pickup_time datetime,destination_time datetime,destination_distance smallint,cost smallint not null,PRIMARY KEY(pickup_time,destination_time,destination_distance),FOREIGN KEY (pickup_time) references car_order1(pickup_time),FOREIGN KEY (destination_time) references car_order2(destination_time),FOREIGN KEY (destination_distance) references car_order4(destination_distance));CREATE TABLE charging_station(station_id integer primary key not null,price smallint not null,charging_time smallint not null,gps_location varchar(100) not null,available_sockets smallint not null);CREATE TABLE workshop(workshop_id integer primary key not null,work_time varchar(30),address varchar(150) not null,gps_location varchar(100) not null);CREATE TABLE socket(socket_id integer primary key not null,voltage smallint,type varchar(15),is_available tinyint,station_id integer not null,foreign key (station_id) references charging_station(station_id));CREATE TABLE car_parts_provider(provider_id integer primary key not null,name varchar(15) not null,address varchar(150) not null,phone smallint not null);CREATE TABLE car_part_class(vendor_code integer primary key not null,type varchar(30) not null,color varchar(30) not null,manufacturer varchar(30));CREATE TABLE car_part_instance(car_part_id integer primary key not null,usage_date datetime not null,workshop_id integer not null, vendor_code integer not null,foreign key (workshop_id) references workshop(workshop_id),foreign key (vendor_code) references car_part_class(vendor_code));CREATE TABLE car_workshop(car_id integer not null,workshop_id integer not null,cost integer not null,PRIMARY KEY(car_id,workshop_id),FOREIGN KEY(car_id) references car(car_id),FOREIGN KEY(workshop_id) references workshop(workshop_id));CREATE TABLE car_charging_station(car_id integer not null,station_id integer not null,start_time datetime, end_time datetime,PRIMARY KEY(car_id,station_id),FOREIGN KEY(car_id) references car(car_id),FOREIGN KEY(station_id) references charging_station(station_id));CREATE TABLE car_part_class_car_part_provider(vendor_code integer not null,provider_id integer not null,price integer not null,PRIMARY KEY(vendor_code,provider_id),FOREIGN KEY(vendor_code) references car_part_class(vendor_code),FOREIGN KEY(provider_id) references car_parts_provider(provider_id));
