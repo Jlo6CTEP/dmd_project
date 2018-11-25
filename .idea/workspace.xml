@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c4d49d5-87fb-45d5-a837-eff10ae93343" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dmd_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dmd_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courseDB/courseDB" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/courseDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/query/query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/query/task_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/query/task_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/card_no.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/card_no.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,14 +42,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="6002" />
+          <entry key="py" value="6624" />
           <entry key="txt" value="579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="589" />
-          <entry key="Python" value="6002" />
+          <entry key="Python" value="6624" />
         </counts>
       </usages-collector>
     </session>
@@ -63,20 +59,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="309" selection-start-line="309" selection-end-line="309" />
+            <state relative-caret-position="11">
+              <caret line="304" column="74" selection-start-line="304" selection-start-column="74" selection-end-line="304" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="115" selection-start-line="115" selection-end-line="115" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-425">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -84,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="221" selection-start-line="221" selection-end-line="221" />
+            <state relative-caret-position="114">
+              <caret line="313" selection-start-line="313" selection-end-line="313" />
             </state>
           </provider>
         </entry>
@@ -98,17 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="177" selection-start-line="177" selection-end-line="177" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="110">
+              <caret line="172" selection-start-line="172" selection-end-line="172" />
             </state>
           </provider>
         </entry>
@@ -117,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/query/query.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
             </state>
           </provider>
         </entry>
@@ -149,8 +133,8 @@
         <option value="$PROJECT_DIR$/query/frontend.py" />
         <option value="$PROJECT_DIR$/query/query.py" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/py.py" />
-        <option value="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" />
         <option value="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" />
       </list>
     </option>
   </component>
@@ -305,16 +289,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1213" height="773" extended-state="6" />
+    <frame x="-6" y="-6" width="1213" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20797962" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17232598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991511" weight="0.2165109" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38785046" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991511" visible="true" weight="0.398827" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39096573" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -335,18 +319,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py</url>
-          <line>149</line>
+          <line>141</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py</url>
-          <line>145</line>
-          <option name="timeStamp" value="77" />
+          <line>120</line>
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py</url>
-          <line>115</line>
-          <option name="timeStamp" value="78" />
+          <line>6</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -357,6 +341,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="alt" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/test.py" />
@@ -409,13 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1045634136/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -438,34 +420,10 @@
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/chr.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py">
+    <entry file="file://$PROJECT_DIR$/query/query.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
@@ -474,8 +432,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="1972">
+          <caret line="127" column="1" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="313" selection-start-line="313" selection-end-line="313" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="304" column="74" selection-start-line="304" selection-start-column="74" selection-end-line="304" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>

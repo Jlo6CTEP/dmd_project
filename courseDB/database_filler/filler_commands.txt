@@ -1,54 +1,5 @@
-table car_order 1000
-record order_id unique_int(1,10000)
-record cost int(100,1000)
-record initial_location location()
-record pickup_location location()
-record destination_location location()
-record initial_time time_seconds()
-record pickup_time time_seconds()
-record destination_time time_seconds()
-record pickup_distance int(10,100)
-record destination_distance int(10,100)
-
-
-table car_workshop 20
-record cost int(100,100500)
-relation car car_id workshop workshop_id 1-1
-foreign column_this tble column_other
-
-table charge 100
-record end_time time()
-record start_time time()
-relation car car_id charging_station station_id N-N 5
-
-table charging_station 20
-record station_id unique_int(1,10000)
-record price int(100,1000)
-record charging_time time_seconds()
-record gps_location location()
-record available_sockets int(1,10)
-
-table parts_provider 30
-record provider_id unique_int(1,10000)
-record name full_name()
-record address address()
-record phone phone()
-
-table car_part 2000
-record part_id unique_int(1,10000)
-record manufacturer_id unique_int(1,10000)
-record type part_type
-record color color
-record price int(100,1000)
-
-table workshop 40
-record workshop_id unique_int(1,10000)
-record work_time work_hours()
-record address address()
-record gps_location location()
-
-table customer 5000
-record customer_id unique_int(1,10000)
+table customer 500
+record customer_id unique_int(0,10000)
 record username nick_name
 record first_name first_name
 record second_name last_name
@@ -58,24 +9,106 @@ record email email
 record gps_location location()
 
 table bank_card 750
-record card_id unique_int(1,100000)
-record number card_no()
-record expire date_no_day()
-record security_code int(100,999)
+record number card_no
+record expire date_no_day
+record verif int(100,999)
+foreign customer_id customer_id customer
 
-table car 300
-record car_id unique_int(1,10000)
+table car 200
+record car_id unique_int(0,10000)
 record model model
 record license_plate license_plate()
 record color color
-record mileage int(100,10000)
+record mileage int(100,1000)
 record gps_location location()
 record state state
-record battery_level int(1,100)
+record battery_level int(0,100)
 
-table socket 10
-record socket_id unique_int(1,10000)
-record voltage int(50,220)
+table location 10000
+record location_id unique_int(0,100000)
+record address address()
+record gps_location location()
+
+table car_order0 4000
+record order_id unique_int(0,10000)
+record initial_time time()
+foreign bank_card number bank_card
+foreign customer_id customer_id customer
+foreign car_id car_id car
+foreign initial_location location_id location
+foreign pickup_location location_id location
+foreign destination_location location_id location
+
+table car_order1 4000
+record initial_time datetime,
+record pickup_time datetime,
+foreign initial_location initial_location car_order0
+foreign pickup_location pickup_location car_order0
+foreign initial_time initial_time car_order0
+foreign initial_location location_id location
+
+table car_order2 4000
+record destination_time time()
+foreign pickup_location pickup_location car_order0
+foreign destination_location destination_location car_order0
+foreign pickup_time pickup_time car_order1
+
+table car_order3 4000
+record pickup_distance int(10,1000)
+foreign initial_location initial_location car_order0
+foreign pickup_location pickup_location car_order0
+
+table charging_station 200
+record station_id unique_int(0,10000)
+record price int(10,100)
+record charging_time time()
+record gps_location location()
+record available_sockets int(0,10)
+
+table workshop 200
+record workshop_id unique_int(0,10000)
+record work_time work_hours()
+record address address()
+record gps_location location()
+
+table socket 1000
+record socket_id unique_int(0,10000)
+record voltage int(60,220)
 record type shape
-record is_available bool();
+record is_available bool()
+foreign station_id station_id charging_station
 
+table car_parts_provider 300
+record provider_id unique_int(0,10000)
+record name company_name
+record address address()
+record phone phone()
+
+table car_part_class 100
+record vendor_code unique_int(0,10000)
+record type part_type
+record color color
+record manufacturer company_name
+
+table car_part_instance 10000
+record car_part_id unique_int(0,100000)
+record usage_date date()
+foreign workshop_id workshop_id workshop
+foreign vendor_code vendor_code car_part_class
+
+table car_workshop 300
+record cost int(10,1000)
+foreign car_id car_id car
+foreign workshop_id workshop_id workshop
+
+table car_charging_station 8000
+record start_time time()
+record end_time time()
+foreign car_id car_id car
+foreign station_id station_id charging_station
+
+table car_part_class_car_part_provider 1000
+record price int(10,1000)
+foreign vendor_code vendor_code car_part_class
+foreign provider_id provider_id car_parts_provider
+;
