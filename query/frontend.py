@@ -13,7 +13,6 @@ from sys import platform
 
 class MainWindow(QWidget):
     def __init__(self):
-
         if sys.platform != 'linux':
             my_app_id = 'InnoUI.DMD_project.ez_A_for_course.101'  # arbitrary string
             ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(my_app_id)
@@ -54,18 +53,22 @@ class MainWindow(QWidget):
         result_scroll.setWidget(result_label)
         result_scroll.setWidgetResizable(True)
 
-        v_layout = QVBoxLayout()
+        v_layout_left = QVBoxLayout()
+        v_layout_left.addWidget(query_button)
+        v_layout_left.addWidget(selector)
+        v_layout_left.addStretch()
 
-        v_layout.addWidget(task_scroll)
-        v_layout.addWidget(query_button)
-        v_layout.addWidget(selector)
-        v_layout.addStretch()
+        v_layout_right = QVBoxLayout()
+        v_layout_right.addWidget(task_scroll)
+        v_layout_right.addWidget(result_scroll)
+        v_layout_right.setStretchFactor(result_scroll, 2)
+        v_layout_right.setStretchFactor(task_scroll, 6)
 
         h_layout = QHBoxLayout()
-        h_layout.addLayout(v_layout)
-        h_layout.addWidget(result_scroll)
-        h_layout.setStretchFactor(v_layout, 1)
-        h_layout.setStretchFactor(result_scroll, 5)
+        h_layout.addLayout(v_layout_left)
+        h_layout.addLayout(v_layout_right)
+        h_layout.setStretchFactor(v_layout_left, 1)
+        h_layout.setStretchFactor(v_layout_right, 5)
 
         query_button.clicked.connect(lambda: query.do_query(selector.currentText()))
         selector.currentIndexChanged.connect(lambda: task_label.setText(task_list.task[selector.currentText()]))

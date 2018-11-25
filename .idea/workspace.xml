@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8c4d49d5-87fb-45d5-a837-eff10ae93343" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseDB/courseDB" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/courseDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/card_no.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/card_no.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/query/frontend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/query/query.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,14 +40,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="py" value="6624" />
+          <entry key="py" value="6724" />
           <entry key="txt" value="579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="589" />
-          <entry key="Python" value="6624" />
+          <entry key="Python" value="6724" />
         </counts>
       </usages-collector>
     </session>
@@ -65,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-425">
@@ -97,11 +95,26 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/query/frontend.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/query/query.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="226">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,11 +143,11 @@
         <option value="$PROJECT_DIR$/courseDB/query.py" />
         <option value="$PROJECT_DIR$/frontend.py" />
         <option value="$PROJECT_DIR$/query/task_list.py" />
-        <option value="$PROJECT_DIR$/query/frontend.py" />
-        <option value="$PROJECT_DIR$/query/query.py" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/py.py" />
         <option value="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" />
         <option value="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" />
+        <option value="$PROJECT_DIR$/query/query.py" />
+        <option value="$PROJECT_DIR$/query/frontend.py" />
       </list>
     </option>
   </component>
@@ -198,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.db_filler">
+  <component name="RunManager" selected="Python.frontend (1)">
     <configuration name="db_filler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dmd_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,8 +282,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.db_filler" />
         <item itemvalue="Python.frontend (1)" />
+        <item itemvalue="Python.db_filler" />
         <item itemvalue="Python.frontend" />
       </list>
     </recent_temporary>
@@ -289,7 +302,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1213" height="813" extended-state="6" />
+    <frame x="-6" y="-6" width="1213" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17232598" />
@@ -297,8 +310,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991511" visible="true" weight="0.398827" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39096573" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991511" visible="true" weight="0.39875388" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4143302" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -384,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/query/frontend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -419,13 +425,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/chr.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query/query.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -462,6 +461,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-425">
           <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
