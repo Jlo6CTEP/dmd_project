@@ -10,7 +10,7 @@ DP_PATH = os.getcwd()[:-5] + "courseDB/courseDB"
 
 
 def query1():
-    cursor.execute("SELECT * FROM car WHERE color = 'red'")
+    cursor.execute("SELECT * FROM car WHERE color = 'red' AND license_plate LIKE 'A%%%N%'")
     res = cursor.fetchall()  # getting results
     res = "\n".join([str(x) for x in res])
     return res
@@ -18,7 +18,7 @@ def query1():
 
 def query2(given_date):  # YYYY-MM-DD
     cursor.execute(
-        "SELECT stationId, start_time, end_time FROM charge WHERE date(start_time) = {} or date(end_time) = {}".format(
+        "SELECT station_id, start_time, end_time FROM car_charging_station WHERE date(start_time) = {} or date(end_time) = {}".format(
             given_date, given_date))
     used = [set() for h in range(24)]
     for rec in cursor.fetchall():
@@ -27,7 +27,7 @@ def query2(given_date):  # YYYY-MM-DD
     return "test2"
 
 
-for i in range(x +):
+# for i in range(x +):
 
 
 # code
