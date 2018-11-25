@@ -1,5 +1,3 @@
 IF EXIST ../courseDB (echo file exists) ELSE (
-sqlite3 ./courseDB < ./commands.txt
-move ./courseDB ..
+sqlite3 ../courseDB < ./commands.txt
 )
-cmd /k
