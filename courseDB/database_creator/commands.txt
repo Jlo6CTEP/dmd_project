@@ -46,8 +46,7 @@ pickup_location integer not null,
 initial_time datetime,
 pickup_time datetime,
 PRIMARY KEY (initial_location,pickup_location,initial_time),
-FOREIGN KEY (initial_location,pickup_location,initial_time) references car_order0(initial_location,pickup_location,initial_time),
-FOREIGN KEY (initial_location,pickup_location) references location(location_id,location_id));
+FOREIGN KEY (initial_location,pickup_location,initial_time) references car_order0(initial_location,pickup_location,initial_time));
 CREATE TABLE car_order2(
 pickup_location integer not null,
 destination_location integer  not null,
@@ -55,29 +54,26 @@ pickup_time datetime,
 destination_time,
 PRIMARY KEY(pickup_location,destination_location,pickup_time),
 FOREIGN KEY (pickup_location,destination_location) references car_order0(pickup_location,destination_location),
-FOREIGN KEY (pickup_time) references car_order1(pickup_time),
-FOREIGN KEY (pickup_location,destination_location) references location(location_id,location_id));
+FOREIGN KEY (pickup_time) references car_order1(pickup_time));
 CREATE TABLE car_order3(
 initial_location integer not null,
 pickup_location integer not null,
 pickup_distance smallint,
 PRIMARY KEY(initial_location,pickup_location),
-FOREIGN KEY (initial_location,pickup_location) references car_order0(initial_location,pickup_location),
-FOREIGN KEY (initial_location,pickup_location) references location(location_id,location_id));
+FOREIGN KEY (initial_location,pickup_location) references car_order0(initial_location,pickup_location));
 CREATE TABLE car_order4(
-initial_location integer not null,
 pickup_location integer not null,
+destination_location integer not null,
 destination_distance smallint,
-PRIMARY KEY(initial_location,pickup_location),
-FOREIGN KEY (pickup_location,destination_distance) references car_order0(pickup_location,destination_distance),
-FOREIGN KEY (initial_location,pickup_location) references location(location_id,location_id));
+PRIMARY KEY(pickup_location,destination_location),
+FOREIGN KEY (pickup_location,destination_location) references car_order0(pickup_location,destination_location));
 CREATE TABLE car_order5(
 pickup_time datetime,
 destination_time datetime,
 destination_distance smallint,
 cost smallint not null,
 PRIMARY KEY(pickup_time,destination_time,destination_distance),
-FOREIGN KEY (pickup_time) references car_order2(pickup_time),
+FOREIGN KEY (pickup_time) references car_order1(pickup_time),
 FOREIGN KEY (destination_time) references car_order2(destination_time),
 FOREIGN KEY (destination_distance) references car_order4(destination_distance));
 CREATE TABLE charging_station(
