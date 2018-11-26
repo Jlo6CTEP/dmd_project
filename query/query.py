@@ -1,4 +1,3 @@
-import task_list
 import sqlite3
 import os
 
@@ -19,6 +18,38 @@ def query2():
     return "test2"
 
 
+def query3():
+    return "test3"
+
+
+def query4():
+    return "test4"
+
+
+def query5():
+    return "test5"
+
+
+def query6():
+    return "test6"
+
+
+def query7():
+    return "test7"
+
+
+def query8():
+    return "test8"
+
+
+def query9():
+    return "test9"
+
+
+def query10():
+    return "test10"
+
+
 def do_query(query_name, input_data=None):
     global cursor
 
@@ -31,6 +62,8 @@ def do_query(query_name, input_data=None):
     args = ["input_data", ""][input_data is None]  # Prepares argument
     funct = "query" + query_num + "(" + args + ")"  # Prepares function
     res = eval(funct)  # Evaluates function
+
+    # Mb dict of functions ll be better? I mean, eval is not good
 
     print(res)
     print()
