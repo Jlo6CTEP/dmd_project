@@ -101,24 +101,25 @@ def query5():
     begin = cursor.execute("SELECT date(min(initial_time)) from car_order1").fetchall()[0][0]
     end = cursor.execute(" SELECT date(max(destination_time)) from car_order2").fetchall()[0][0]
 
-    a = datetime.strptime(begin, "%Y-%m-%d")
+    a = c
     b = datetime.strptime(end, "%Y-%m-%d")
 
     distance = 0
     duration = 0
     start_day = a.date()
-    for i in range((b.date()-a.date()).days):
+    for i in range((b.date() - a.date()).days):
         start_day_str = str(start_day)
         cursor.execute('''SELECT pickup_distance from car_order3 inner join car_order1 on 
         car_order3.initial_location = car_order1.initial_location 
         and car_order1.pickup_location = car_order3.pickup_location 
-        where date(initial_time)={} or date(pickup_time)={}'''.format(start_day_str,start_day_str))
+        where date(initial_time)={} or date(pickup_time)={}'''.format(start_day_str, start_day_str))
         distance += sum([x[0] for x in cursor.fetchall()])
         start_day += timedelta(days=1)
-    distance /= (b.date()-a.date()).days
+    distance /= (b.date() - a.date()).days
     cursor.execute('''SELECT julianday(pickup_time)-julianday(initial_time) FROM car_order1''')
     duration += sum([x[0] for x in cursor.fetchall()])
-    return distance,abs(duration)
+    return distance, abs(duration)
+
 
 def query6():
     return "test6"
@@ -155,8 +156,23 @@ def query9():
 
 
 def query10():
-    
-    return "test10"
+    cursor.execute('''SELECT car.car_id,model,cost,date from car_workshop 
+    INNER JOIN car on car_workshop.car_id = car.car_id
+''')
+    result = []
+    curs_in = cursor.fetchall()
+    for x in curs_in:
+        result.append([f for f in curs_in if f[0] == x[0]])
+    for x in result:
+        x.sort(key=lambda x: x[3])
+
+    current_date = datetime.now()
+    print([x[0][3] for x in result])
+    total_sum = [sum([f[2] for f in x]) for x in result]
+    fst_repair = [(current_date.date() - datetime.strptime(x[0][3], "%Y-%m-%d").date()).days for x in result]
+    car_type = [x[0][1] for x in result]
+
+    return sorted([(x / y, z) for x, y, z in zip(total_sum, fst_repair, car_type)], key=lambda x: x[0], reverse=True)[0]
 
 
 def do_query(query_name, input_data=None):
@@ -182,7 +198,8 @@ def do_query(query_name, input_data=None):
 
 
 if __name__ == "__main__":
-    do_query("Query 1", ["cobalt", "QB"])
-    do_query("Query 2", ["2017-03-03"])
-    do_query("Query 3")
-    do_query("Query 5")
+    # do_query("Query 1", ["cobalt", "QB"])
+    # do_query("Query 2", ["2017-03-03"])
+    # do_query("Query 3")
+    # do_query("Query 5")
+    print(do_query("Query 10"))

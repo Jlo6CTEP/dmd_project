@@ -109,6 +109,7 @@ foreign vendor_code vendor_code car_part_class
 
 table car_workshop 300
 record cost int(10,1000)
+record date date()
 foreign car_id car_id car
 foreign workshop_id workshop_id workshop
 

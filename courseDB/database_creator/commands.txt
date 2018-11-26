@@ -130,6 +130,7 @@ CREATE TABLE car_workshop(
 car_id integer not null,
 workshop_id integer not null,
 cost integer not null,
+date datetime,
 PRIMARY KEY(car_id,workshop_id),
 FOREIGN KEY(car_id) references car(car_id),
 FOREIGN KEY(workshop_id) references workshop(workshop_id));
