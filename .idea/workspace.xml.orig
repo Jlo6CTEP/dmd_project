@@ -1,136 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="104ae914-4507-47cd-a96b-be3e145bcbe7" name="Default Changelist" comment="">
+    <list default="true" id="8c4d49d5-87fb-45d5-a837-eff10ae93343" name="Default Changelist" comment="">
 <<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dmd_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dmd_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_filler.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_filler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/address.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/first_name.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/last_name.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/location.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/part.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_data/time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/query/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/query/frontend.py" afterDir="false" />
 =======
-      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/test.py" afterDir="false" />
->>>>>>> trashcan
+      <change afterPath="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDB/courseDB" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/courseDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/query/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/query/query.py" afterDir="false" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
     </list>
+    <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/dmd_project$query.coverage" NAME="query Coverage Results" MODIFIED="1543198601410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/query" />
+    <SUITE FILE_PATH="coverage/dmd_project$db_filler.coverage" NAME="db_filler Coverage Results" MODIFIED="1543196209973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courseDB/database_filler" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="courseDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="courseDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="courseDB" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1415841080">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-<<<<<<< HEAD
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.opened" value="2" />
-=======
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
->>>>>>> trashcan
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.0" value="6" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-<<<<<<< HEAD
-          <entry key="py" value="3" />
-=======
-          <entry key="py" value="6" />
->>>>>>> trashcan
+          <entry key="py" value="25" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-<<<<<<< HEAD
-          <entry key="Python" value="3" />
-=======
-          <entry key="Python" value="6" />
->>>>>>> trashcan
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-<<<<<<< HEAD
-          <entry key="py" value="889" />
-=======
-          <entry key="py" value="2042" />
->>>>>>> trashcan
+          <entry key="dummy" value="10" />
+          <entry key="py" value="9253" />
+          <entry key="txt" value="579" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-<<<<<<< HEAD
-          <entry key="Python" value="889" />
-=======
-          <entry key="Python" value="2042" />
->>>>>>> trashcan
+          <entry key="PLAIN_TEXT" value="589" />
+          <entry key="Python" value="9253" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="140284377">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="bank_card" value="1" />
+          <entry key="bat" value="1" />
+          <entry key="car" value="6" />
+          <entry key="car_charging_station" value="9" />
+          <entry key="car_order0" value="1" />
+          <entry key="charging_station" value="5" />
+          <entry key="date" value="1" />
+          <entry key="py" value="4" />
+          <entry key="socket" value="3" />
+          <entry key="sql" value="2" />
+          <entry key="txt" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="25" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="4" />
+          <entry key="Scratch" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="117" />
+          <entry key="date" value="2" />
+          <entry key="py" value="152" />
+          <entry key="sql" value="212" />
+          <entry key="txt" value="100" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="102" />
+          <entry key="Python" value="149" />
+          <entry key="SQL" value="3" />
+          <entry key="Scratch" value="329" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/query/query.py">
+          <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/db_filler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
+            <state relative-caret-position="1682">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
 =======
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="-164">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
->>>>>>> trashcan
+                <element signature="e#0#16#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/text.py">
+            <state relative-caret-position="120">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/query/task_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="459">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1045634136/PyQt5/QtWidgets/QDockWidget.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="233" column="8" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
 =======
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="191" selection-start-line="191" selection-end-line="191" />
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="309" selection-start-line="309" selection-end-line="309" />
->>>>>>> trashcan
+        <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car_charging_station">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/test.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/socket">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="496">
+              <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+              <folding>
+                <element signature="e#17#31#0" expanded="true" />
+              </folding>
+=======
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -144,7 +243,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
+      <find>table</find>
+      <find>green</find>
+      <find>,green</find>
+      <find>9959</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,33 +255,49 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/py_sqlite.py" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/db_filler.py" />
-        <option value="$PROJECT_DIR$/text.py" />
-=======
-        <option value="$PROJECT_DIR$/text.py" />
-        <option value="$PROJECT_DIR$/db_filler.py" />
+        <option value="$PROJECT_DIR$/courseDB/frontend.py" />
+        <option value="$PROJECT_DIR$/courseDB/query.py" />
+        <option value="$PROJECT_DIR$/frontend.py" />
+        <option value="$USER_HOME$/Downloads/Telegram Desktop/py.py" />
         <option value="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" />
-        <option value="$PROJECT_DIR$/courseDB/database_filler/test.py" />
->>>>>>> trashcan
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/query/task_list.py" />
+        <option value="$PROJECT_DIR$/query/query.py" />
+=======
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
+        <option value="$PROJECT_DIR$/query/frontend.py" />
+        <option value="$USER_HOME$/Downloads/Telegram Desktop/query.py" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_2.sql" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console.sql" />
+        <option value="$PROJECT_DIR$/query/query.py" />
       </list>
     </option>
   </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
-    <option name="x" value="780" />
-    <option name="y" value="105" />
-    <option name="width" value="1780" />
-    <option name="height" value="1780" />
+    <option name="x" value="-15" />
+    <option name="width" value="1528" />
+    <option name="height" value="1915" />
 =======
-    <option name="x" value="602" />
-    <option name="y" value="122" />
-    <option name="width" value="1248" />
-    <option name="height" value="728" />
->>>>>>> trashcan
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -187,6 +305,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,24 +324,35 @@
               <item name="courseDB" type="462c0819:PsiDirectoryNode" />
               <item name="database_filler" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmd_project" type="462c0819:PsiDirectoryNode" />
+              <item name="query" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-<<<<<<< HEAD
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../de_solver" />
->>>>>>> trashcan
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ysuho\PycharmProjects\dmd_project\venv" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ysuho\PycharmProjects\dmd_project" />
+      <recent name="C:\Users\ysuho\PycharmProjects\dmd_project\courseDB" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -238,10 +368,11 @@
     </option>
   </component>
 <<<<<<< HEAD
-  <component name="RunManager" selected="Python.text">
+  <component name="RunManager" selected="Python.frontend (1)">
 =======
-  <component name="RunManager" selected="Python.test">
-    <configuration name="db_filler (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.query">
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
+    <configuration name="db_filler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dmd_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,6 +384,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -262,8 +394,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
->>>>>>> trashcan
-    <configuration name="db_filler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="frontend (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dmd_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/query" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/query/frontend.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="frontend" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dmd_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -275,7 +428,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_filler.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/frontend.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,7 +438,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="py_sqlite" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="query" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dmd_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,56 +446,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/query" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\YuriySukhorukov\PycharmProjects\dmd_project\db_filler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-<<<<<<< HEAD
-=======
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dmd_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/courseDB/database_filler" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courseDB/database_filler/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
->>>>>>> trashcan
-    <configuration name="text" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dmd_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/query/query.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -351,27 +461,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.py_sqlite" />
       <item itemvalue="Python.db_filler" />
-      <item itemvalue="Python.text" />
+      <item itemvalue="Python.frontend" />
+      <item itemvalue="Python.frontend (1)" />
+      <item itemvalue="Python.query" />
+    </list>
+    <recent_temporary>
+      <list>
 <<<<<<< HEAD
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.text" />
-        <item itemvalue="Python.db_filler" />
 =======
-      <item itemvalue="Python.db_filler (1)" />
-      <item itemvalue="Python.test" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.db_filler (1)" />
+        <item itemvalue="Python.query" />
         <item itemvalue="Python.db_filler" />
-        <item itemvalue="Python.text" />
->>>>>>> trashcan
-        <item itemvalue="Python.py_sqlite" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
+        <item itemvalue="Python.frontend (1)" />
+        <item itemvalue="Python.db_filler" />
+        <item itemvalue="Python.frontend" />
       </list>
     </recent_temporary>
   </component>
@@ -380,90 +484,74 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="104ae914-4507-47cd-a96b-be3e145bcbe7" name="Default Changelist" comment="" />
-      <created>1541678587002</created>
+      <changelist id="8c4d49d5-87fb-45d5-a837-eff10ae93343" name="Default Changelist" comment="" />
+      <created>1542038701491</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1541678587002</updated>
+      <updated>1542038701491</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
 <<<<<<< HEAD
-    <frame x="-6" y="-6" width="1213" height="813" extended-state="6" />
-    <editor active="true" />
-    <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1196944" />
-=======
-    <frame x="-6" y="-6" width="1213" height="773" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2139219" />
->>>>>>> trashcan
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23900293" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33870968" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32866043" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991511" visible="true" weight="0.36448598" />
 =======
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.07009346" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44548288" />
->>>>>>> trashcan
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991511" visible="true" weight="0.39716312" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4143302" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008489" side_tool="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.20067114" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991511" weight="0.39716312" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4143302" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008489" side_tool="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="11" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.20067114" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-<<<<<<< HEAD
-          <url>file://$PROJECT_DIR$/db_filler.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/text.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db_filler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-=======
-          <url>file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -472,61 +560,267 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="alt" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://F:/python/Lib/sre_compile.py" />
-    <entry file="file://F:/python/Lib/random.py" />
-    <entry file="file://F:/python/Lib/urllib/parse.py" />
-    <entry file="file://F:/python/Lib/codecs.py" />
-    <entry file="file://F:/python/Lib/re.py" />
-    <entry file="file://$PROJECT_DIR$/text.py">
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/test.py" />
+    <entry file="file://$PROJECT_DIR$/frontend.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1045634136/PyQt5/QtWidgets/QComboBox.py" />
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/city.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date_no_day.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/py.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="170">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db_filler.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1045634136/builtins.py" />
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/int.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/bool.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/chr.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py" />
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/bank_card" />
+    <entry file="file://$PROJECT_DIR$/query/frontend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="121" column="14" selection-start-line="121" selection-start-column="14" selection-end-line="121" selection-end-column="14" />
+        <state relative-caret-position="-69">
+          <caret line="45" column="59" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="19" column="117" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="734" selection-start-column="734" selection-end-column="734" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/license_plate.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/nick_name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/types.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/task_list.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="116" selection-start-column="116" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="67" lean-forward="true" selection-start-column="67" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car_order0">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/time_seconds.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/address.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/time.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py" />
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/bank_card" />
+    <entry file="file://$USER_HOME$/Downloads/Telegram Desktop/query.py" />
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="1071" selection-start-line="1071" selection-end-line="1071" />
+        <state relative-caret-position="294">
+          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1045634136/PyQt5/QtWidgets/QDockWidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
->>>>>>> trashcan
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        <state relative-caret-position="120">
+          <caret line="233" column="8" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="1682">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+=======
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/query/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding>
+            <element signature="e#17#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/task_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+=======
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car_charging_station">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/charging_station">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/socket">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="120">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+=======
+        <state relative-caret-position="-164">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+>>>>>>> 3c970052511fd6c1679d899a001367a671e76f30
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

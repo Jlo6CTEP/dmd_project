@@ -113,8 +113,8 @@ foreign car_id car_id car
 foreign workshop_id workshop_id workshop
 
 table car_charging_station 8000
-record start_time time()
-record end_time time()
+record start_time datetime()
+record end_time datetime()
 foreign car_id car_id car
 foreign station_id station_id charging_station
 
