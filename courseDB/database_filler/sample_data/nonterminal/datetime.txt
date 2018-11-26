@@ -1,1 +1,1 @@
-string int(2000,2020)-int(1,12)-int(1,30) int(1,24):int(1,59):int(1,59)
+string int(2000,2020)-0int(1,9)-int(0,2)int(0,9) int(0,1)int(0,9):int(0,5)int(0,9):int(0,5)int(0,9)

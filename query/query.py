@@ -20,9 +20,9 @@ def query2(given_date):  # YYYY-MM-DD hh:mm:ss
     for rec in cursor.fetchall():
         print(rec[0])
 
+
     cursor.execute(
-        "SELECT station_id, start_time, end_time FROM car_charging_station WHERE date(start_time) = {} or date(end_time) = {}".format(
-            given_date, given_date))
+        "SELECT count(socket_id) from car_charging_station WHERE '{}-{}-00-00' <= start_time or '{}-{}-59-59' <= end_time".format(given_date, hh, given_date, hh))
     used = [set() for h in range(24)]
     for rec in cursor.fetchall():
         print(rec)
@@ -31,6 +31,12 @@ def query2(given_date):  # YYYY-MM-DD hh:mm:ss
 
 
 def query3():
+    cursor.execute("SELECT COUNT(car_id) FROM car")
+    total = cursor.fetchall()[0][0]
+    cursor.execute("SELECT max(destination_time) from car_order2")
+    week_end = cursor.fetchall()[0][0]
+    week_start = week_end - datetime()
+
     return "test3"
 
 
@@ -62,7 +68,6 @@ def query10():
     return "test10"
 
 
-
 def do_query(query_name, input_data=None):
     global cursor
 
@@ -85,6 +90,6 @@ def do_query(query_name, input_data=None):
     return res
 
 
-do_query("Query 1 ")
+# do_query("Query 1 ")
 do_query("Query 2 ", "2018-11-01")
 # do_query("Query 3 ")
