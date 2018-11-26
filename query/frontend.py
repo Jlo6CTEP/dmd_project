@@ -8,8 +8,6 @@ from query import do_query
 from PyQt5.QtWidgets import QWidget, QDesktopWidget, QApplication, QScrollArea, QLabel, QPushButton, QComboBox, \
     QVBoxLayout, QHBoxLayout, QFrame, QMainWindow, QDockWidget, QFormLayout, QLineEdit, QSizePolicy
 
-from sys import platform
-
 input_labels = [['color', 'sign letters'], ['date'], [], [], ['date'], [], [], ['date'], [], []]
 
 

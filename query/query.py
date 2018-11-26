@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import task_list
 
 DB_PATH = "../courseDB/courseDB"
 DP_PATH = os.getcwd()[:-5] + "courseDB/courseDB"
@@ -7,27 +8,31 @@ DP_PATH = os.getcwd()[:-5] + "courseDB/courseDB"
 
 # Each queryN method returns string output without separators and stuff
 
-
-def query1():
-    cursor.execute("SELECT * FROM car WHERE color = 'red' AND license_plate LIKE 'A%%%N%'")
+def query1(input_data):
+    color, plate_let = input_data
+    plate_let = plate_let + "%" * (3 - len(plate_let))
+    plate = "{}%%%{}{}".format(plate_let[0], plate_let[1], plate_let[2])
+    cursor.execute("SELECT * FROM car WHERE color = '{}' AND license_plate LIKE '{}'".format(color, plate))
     res = cursor.fetchall()  # getting results
     res = "\n".join([str(x) for x in res])
     return res
 
 
-def query2(given_date):  # YYYY-MM-DD hh:mm:ss
-    cursor.execute("SELECT start_time>end_time from car_charging_station")
-    for rec in cursor.fetchall():
-        print(rec[0])
+def query2(input_data):  # YYYY-MM-DD
+    given_date = input_data[0]
+    count = [0] * 24
+    for h in range(24):
+        hh = ["0" + str(h), str(h)][h >= 10]
+        data = {"hh": hh, "given": given_date}
+        q = "SELECT count(*) from car_charging_station " \
+            "WHERE '{given} {hh}:00:00' <= start_time and start_time <= '{given} {hh}:59:59' " \
+            "or '{given} {hh}:00:00' <= end_time and end_time <= '{given} {hh}:59:59'"\
+            .format(**data)
+        cursor.execute(q)
+        count[h] = cursor.fetchall()[0][0]
+    res = "\n".join([str(i)+"h-"+str(i+1)+'h: '+str(count[i]) for i in range(24)])
 
-
-    cursor.execute(
-        "SELECT count(socket_id) from car_charging_station WHERE '{}-{}-00-00' <= start_time or '{}-{}-59-59' <= end_time".format(given_date, hh, given_date, hh))
-    used = [set() for h in range(24)]
-    for rec in cursor.fetchall():
-        print(rec)
-
-    return "test2"
+    return res
 
 
 def query3():
@@ -90,6 +95,7 @@ def do_query(query_name, input_data=None):
     return res
 
 
-# do_query("Query 1 ")
-do_query("Query 2 ", "2018-11-01")
-# do_query("Query 3 ")
+if __name__ == "__main__":
+    do_query("Query 1", ["cobalt", "QB"])
+    do_query("Query 2", ["2017-03-03"])
+    do_query("Query 3")
