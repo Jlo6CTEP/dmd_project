@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c4d49d5-87fb-45d5-a837-eff10ae93343" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dmd_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dmd_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courseDB/courseDB" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/courseDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/query/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/query/query.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
@@ -18,8 +16,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/dmd_project$query.coverage" NAME="query Coverage Results" MODIFIED="1543186118964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/query" />
-    <SUITE FILE_PATH="coverage/dmd_project$db_filler.coverage" NAME="db_filler Coverage Results" MODIFIED="1543185696195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courseDB/database_filler" />
+    <SUITE FILE_PATH="coverage/dmd_project$query.coverage" NAME="query Coverage Results" MODIFIED="1543198601410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/query" />
+    <SUITE FILE_PATH="coverage/dmd_project$db_filler.coverage" NAME="db_filler Coverage Results" MODIFIED="1543196209973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/courseDB/database_filler" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -93,55 +91,64 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bank_card" value="1" />
-          <entry key="car" value="3" />
-          <entry key="car_charging_station" value="1" />
-          <entry key="txt" value="5" />
+          <entry key="bat" value="1" />
+          <entry key="car" value="6" />
+          <entry key="car_charging_station" value="9" />
+          <entry key="car_order0" value="1" />
+          <entry key="charging_station" value="5" />
+          <entry key="date" value="1" />
+          <entry key="py" value="4" />
+          <entry key="socket" value="3" />
+          <entry key="sql" value="2" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="5" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Database Element" value="25" />
+          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Python" value="4" />
+          <entry key="Scratch" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="83" />
-          <entry key="py" value="8" />
-          <entry key="sql" value="80" />
-          <entry key="txt" value="12" />
+          <entry key="cell" value="117" />
+          <entry key="date" value="2" />
+          <entry key="py" value="152" />
+          <entry key="sql" value="212" />
+          <entry key="txt" value="100" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="8" />
-          <entry key="Scratch" value="163" />
+          <entry key="PLAIN_TEXT" value="102" />
+          <entry key="Python" value="149" />
+          <entry key="SQL" value="3" />
+          <entry key="Scratch" value="329" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/query/query.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="-164">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="10" selection-start-column="10" selection-end-column="10" />
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -156,16 +163,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_1.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car">
+        <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/socket">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -174,27 +172,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt">
+        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="734" selection-start-column="734" selection-end-column="734" />
+            <state relative-caret-position="193">
+              <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/nick_name.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/license_plate.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -209,6 +201,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>table</find>
+      <find>green</find>
+      <find>,green</find>
+      <find>9959</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,14 +217,18 @@
         <option value="$PROJECT_DIR$/frontend.py" />
         <option value="$PROJECT_DIR$/query/task_list.py" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/py.py" />
-        <option value="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" />
         <option value="$PROJECT_DIR$/courseDB/database_filler/db_filler.py" />
         <option value="$PROJECT_DIR$/query/frontend.py" />
         <option value="$USER_HOME$/Downloads/Telegram Desktop/query.py" />
-        <option value="$PROJECT_DIR$/query/query.py" />
         <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_1.sql" />
         <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_2.sql" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt" />
+        <option value="$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console.sql" />
+        <option value="$PROJECT_DIR$/query/query.py" />
       </list>
     </option>
   </component>
@@ -240,10 +239,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="340" />
-    <option name="y" value="600" />
-    <option name="width" value="1805" />
-    <option name="height" value="1715" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -275,30 +274,16 @@
             <path>
               <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
               <item name="dmd_project" type="462c0819:PsiDirectoryNode" />
-              <item name="courseDB" type="462c0819:PsiDirectoryNode" />
-              <item name="database_filler" type="462c0819:PsiDirectoryNode" />
-              <item name="sample_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmd_project" type="462c0819:PsiDirectoryNode" />
-              <item name="courseDB" type="462c0819:PsiDirectoryNode" />
-              <item name="database_filler" type="462c0819:PsiDirectoryNode" />
-              <item name="sample_data" type="462c0819:PsiDirectoryNode" />
-              <item name="nonterminal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmd_project" type="462c0819:PsiDirectoryNode" />
-              <item name="courseDB" type="462c0819:PsiDirectoryNode" />
-              <item name="database_filler" type="462c0819:PsiDirectoryNode" />
-              <item name="sample_data" type="462c0819:PsiDirectoryNode" />
-              <item name="terminal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dmd_project" type="462c0819:PsiDirectoryNode" />
               <item name="query" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="dmd_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
@@ -307,7 +292,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -450,11 +435,32 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991511" visible="true" weight="0.39716312" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4143302" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008489" side_tool="true" weight="0.32866043" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.20067114" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4991511" weight="0.39716312" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4143302" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -464,35 +470,18 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5008489" side_tool="true" weight="0.32866043" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Database Console" order="11" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="11" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" visible="true" weight="0.20067114" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py</url>
-          <line>141</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -511,18 +500,8 @@
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/test.py" />
     <entry file="file://$PROJECT_DIR$/frontend.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1045634136/PyQt5/QtWidgets/QComboBox.py" />
-    <entry file="file://$PROJECT_DIR$/query/task_list.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/city.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/address.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date_no_day.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -543,12 +522,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1045634136/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/time_seconds.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/time.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/int.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -558,30 +531,10 @@
     <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/chr.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="127" column="1" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/re.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py" />
     <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/bank_card" />
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/query/frontend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-69">
@@ -596,17 +549,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <filtering enabled="true" />
+          <caret column="734" selection-start-column="734" selection-end-column="734" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/license_plate.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/nick_name.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/work_hours.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/types.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query/task_list.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="116" selection-start-column="116" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <caret column="67" lean-forward="true" selection-start-column="67" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car_order0">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/time_seconds.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/address.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/time.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/datetime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/filler_commands.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="115" column="28" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/db_filler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/car">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -617,35 +675,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/charging_station">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://0b8da028-0667-4ccc-8d37-b045a9f57248/schema/main/table/socket">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/0b8da028-0667-4ccc-8d37-b045a9f57248/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/query/query.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        <state relative-caret-position="-164">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/color.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/model.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="734" selection-start-column="734" selection-end-column="734" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/terminal/nick_name.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/license_plate.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/courseDB/database_filler/sample_data/nonterminal/date.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

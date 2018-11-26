@@ -16,7 +16,11 @@ def query1():
     return res
 
 
-def query2(given_date):  # YYYY-MM-DD
+def query2(given_date):  # YYYY-MM-DD hh:mm:ss
+    cursor.execute("SELECT start_time>end_time from car_charging_station")
+    for rec in cursor.fetchall():
+        print(rec[0])
+
     cursor.execute(
         "SELECT station_id, start_time, end_time FROM car_charging_station WHERE date(start_time) = {} or date(end_time) = {}".format(
             given_date, given_date))
