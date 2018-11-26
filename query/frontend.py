@@ -8,7 +8,7 @@ from query import do_query
 from PyQt5.QtWidgets import QWidget, QDesktopWidget, QApplication, QScrollArea, QLabel, QPushButton, QComboBox, \
     QVBoxLayout, QHBoxLayout, QFrame, QMainWindow, QDockWidget, QFormLayout, QLineEdit, QSizePolicy
 
-input_labels = [['color', 'sign letters'], ['date'], [], [], ['date'], [], [], ['date'], [], []]
+input_labels = [['color', 'sign letters'], ['date'], [], ['username'], ['date'], [], [], ['date'], [], []]
 
 
 class MainWindow(QMainWindow):
