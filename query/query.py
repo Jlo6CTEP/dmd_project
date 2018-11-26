@@ -1,6 +1,7 @@
 import sqlite3
 import os
 import task_list
+from datetime import datetime, timedelta
 
 DB_PATH = "../courseDB/courseDB"
 DP_PATH = os.getcwd()[:-5] + "courseDB/courseDB"
@@ -26,23 +27,52 @@ def query2(input_data):  # YYYY-MM-DD
         data = {"hh": hh, "given": given_date}
         q = "SELECT count(*) from car_charging_station " \
             "WHERE '{given} {hh}:00:00' <= start_time and start_time <= '{given} {hh}:59:59' " \
-            "or '{given} {hh}:00:00' <= end_time and end_time <= '{given} {hh}:59:59'"\
+            "or '{given} {hh}:00:00' <= end_time and end_time <= '{given} {hh}:59:59'" \
             .format(**data)
         cursor.execute(q)
         count[h] = cursor.fetchall()[0][0]
-    res = "\n".join([str(i)+"h-"+str(i+1)+'h: '+str(count[i]) for i in range(24)])
+    res = "\n".join([str(i) + "h-" + str(i + 1) + 'h: ' + str(count[i]) for i in range(24)])
 
     return res
+
+def count_per_period(data): # dict with keys period_start, period_end, week_start, week_end
+    q = '''SELECT COUNT(*) from car_order0 NATURAL JOIN car_order2 WHERE 
+        (('{week_start}' <= date(initial_time) and date(initial_time) <= '{week_end}') or
+         ('{week_start}' <= date(destination_time) and date(destination_time) <= '{week_end}')) and
+        (('{period_start}' <= time(initial_time) and time(initial_time) <= '{period_end}') or
+         ('{period_start}' <= time(destination_time) and time(destination_time) <= '{period_end}'))
+        '''.format(**data)
+
+    cursor.execute(q)
+    return cursor.fetchall()[0][0]
 
 
 def query3():
     cursor.execute("SELECT COUNT(car_id) FROM car")
     total = cursor.fetchall()[0][0]
-    cursor.execute("SELECT max(destination_time) from car_order2")
-    week_end = cursor.fetchall()[0][0]
-    week_start = week_end - datetime()
+    cursor.execute("SELECT date(end_time, '-7 day'),date(end_time) from car_charging_station")
+    week_start, week_end = cursor.fetchall()[0]
 
-    return "test3"
+    cnt = [0] * 3
+
+    cnt[0] = count_per_period({"week_start": week_start,
+                                "week_end": week_end,
+                                "period_start": "07:00:00",
+                                "period_end": "10:00:00"})
+    cnt[1] = count_per_period({"week_start": week_start,
+                                "week_end": week_end,
+                                "period_start": "12:00:00",
+                                "period_end": "14:00:00"})
+    cnt[2] = count_per_period({"week_start": week_start,
+                                "week_end": week_end,
+                                "period_start": "17:00:00",
+                                "period_end": "19:00:00"})
+    periods = ["Morning", "Afternoon", "Evening"]
+    percentage = [str(x / total * 100) for x in cnt]
+
+    res = '     '.join(periods) + "\n" + \
+          '     '.join([percentage[i] + " " * (len(periods[i]) - len(percentage[i])) for i in range(3)])
+    return res
 
 
 def query4():

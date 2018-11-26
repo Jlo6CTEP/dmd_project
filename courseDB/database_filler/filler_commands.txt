@@ -31,7 +31,7 @@ record gps_location location()
 
 table car_order0 4000
 record order_id unique_int(0,10000)
-record initial_time time()
+record initial_time datetime()
 foreign bank_card number bank_card
 foreign customer_id customer_id customer
 foreign car_id car_id car
@@ -40,15 +40,15 @@ foreign pickup_location location_id location
 foreign destination_location location_id location
 
 table car_order1 4000
-record initial_time datetime,
-record pickup_time datetime,
+record initial_time datetime()
+record pickup_time datetime()
 foreign initial_location initial_location car_order0
 foreign pickup_location pickup_location car_order0
 foreign initial_time initial_time car_order0
 foreign initial_location location_id location
 
 table car_order2 4000
-record destination_time time()
+record destination_time datetime()
 foreign pickup_location pickup_location car_order0
 foreign destination_location destination_location car_order0
 foreign pickup_time pickup_time car_order1
@@ -72,7 +72,7 @@ foreign destination_distance destination_distance car_order4
 table charging_station 200
 record station_id unique_int(0,10000)
 record price int(10,100)
-record charging_time time()
+record charging_time datetime()
 record gps_location location()
 record available_sockets int(0,10)
 
