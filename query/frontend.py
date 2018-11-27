@@ -106,7 +106,7 @@ class MainWindow(QMainWindow):
         h_layout.setStretchFactor(frame_right, 5)
 
         # query_button.clicked.connect(lambda: query.do_query(selector.currentText()))
-        query_button.clicked.connect(lambda: self.send_request(docks_inputs))
+        query_button.clicked.connect(lambda: result_label.setText(str(self.send_request(docks_inputs))))
         selector.currentIndexChanged.connect(lambda: self.change_dock(selector.currentText()))
 
         main_widget = QWidget()
@@ -132,7 +132,7 @@ class MainWindow(QMainWindow):
 
     def send_request(self, inputs):
         tgt_dock = [(self.docks[x].windowTitle(), x) for x in range(len(self.docks)) if not self.docks[x].isHidden()][0]
-        do_query(tgt_dock[0], ([x[1].text() for x in inputs[tgt_dock[1]]]))
+        return do_query(tgt_dock[0], ([x[1].text() for x in inputs[tgt_dock[1]]]))
 
 
 
